@@ -1,0 +1,679 @@
+{
+  "facts": [
+    {
+      "id": 1,
+      "claim": "Five major healthy dietary patterns (AHEI, AMED/Mediterranean, hPDI, DASH, DRRD) all produce 18–24% lower all-cause mortality risk comparing highest vs. lowest adherence.",
+      "scope": "adults, prospective cohort",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "pooled",
+        "note": "Single large prospective cohort (Lv et al., Science Advances 2026) scored participants against five independent dietary indices and tested each against all-cause mortality. The convergence of five different scoring systems on an 18–24% effect acts as within-study cross-validation."
+      },
+      "mechanism": "Plant-rich, fiber-heavy diets lower LDL cholesterol, reduce systemic inflammation (CRP, IL-6), and improve glycemic control — three of the best-established causal pathways to reduced cardiometabolic mortality.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "mortality"],
+      "verbatim": "18-24% lower all-cause mortality risk comparing highest to lowest dietary adherence"
+    },
+    {
+      "id": 2,
+      "claim": "At age 45, adhering to a healthy dietary pattern adds 1.9–3.0 years of life expectancy for men and 1.5–2.3 years for women.",
+      "scope": "adults age 45+",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "pooled",
+        "note": "Same Science Advances 2026 cohort as fact 1, with life-expectancy gains modeled from the observed mortality hazard ratios across the five dietary patterns."
+      },
+      "mechanism": "Life-expectancy gains are a direct mathematical consequence of the mortality HRs in fact 1; the mechanism reduces to the same LDL/inflammation/glycemic pathways.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "life-expectancy"]
+    },
+    {
+      "id": 3,
+      "claim": "All evidence-based healthy dietary patterns share the same core: emphasize vegetables, fruits, whole grains (fiber-rich), and nuts with unsaturated fatty acids.",
+      "scope": "general adult",
+      "source_ids": ["001", "004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "replicated",
+        "note": "Convergence observation across five independent dietary scoring systems in the Lv 2026 cohort; the same core foods are also shared by Mediterranean, DASH, and MIND patterns in the Puri 2023 life-course review."
+      },
+      "mechanism": "Soluble fiber feeds short-chain-fatty-acid-producing gut bacteria, unsaturated fats improve lipid profiles vs. saturated replacements, and polyphenols from plants reduce oxidative stress — each of these pathways has independent evidence.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "food-groups"]
+    },
+    {
+      "id": 4,
+      "claim": "All evidence-based healthy dietary patterns limit sugar-sweetened beverages and high glycemic index foods.",
+      "scope": "general adult",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "replicated",
+        "note": "All five scoring systems in the Lv 2026 cohort penalize SSB and high-GI intake, and this convergence aligns with prior RCT evidence on glycemic load and metabolic risk."
+      },
+      "mechanism": "High-GI foods and SSBs produce sharp postprandial glucose and insulin spikes that drive de novo lipogenesis, visceral adiposity, and insulin resistance — the upstream mechanism for type-2 diabetes and cardiovascular risk.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "food-groups", "avoid"]
+    },
+    {
+      "id": 5,
+      "claim": "Healthy dietary patterns extend life expectancy regardless of an individual's genetic longevity predisposition — the diet effect is independent of longevity genes.",
+      "scope": "general adult",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Lv 2026 stratified mortality outcomes by a longevity gene score and found the dietary effect held in both high- and low-score strata. Independent replication in other cohorts would move this from strong-single to strong-replicated."
+      },
+      "mechanism": "Diet-driven risk factors (lipids, glycemia, inflammation) act on causal pathways largely orthogonal to the genetic variants associated with extreme longevity, so the two effects add rather than interact.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "genetics"],
+      "verbatim": "Healthy dietary patterns extend life expectancy regardless of longevity genes"
+    },
+    {
+      "id": 6,
+      "claim": "No single diet pattern is universally best — individuals can choose among AHEI, Mediterranean, plant-based, DASH, or DRRD based on preference and cultural fit, and still get the benefit.",
+      "scope": "general adult",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "pooled",
+        "note": "In Lv 2026 all five patterns landed in the same 18–24% mortality-reduction band, with only minor sex-specific differences (DRRD slightly stronger in men, AMED in women)."
+      },
+      "mechanism": "The five patterns share the same core food groups (fact 3) and exclusions (fact 4), so they activate the same underlying mechanisms; surface differences in their scoring systems don't change the physiological inputs.",
+      "mechanism_source": "source",
+      "tags": ["nutrition", "flexibility"]
+    },
+    {
+      "id": 7,
+      "claim": "Adults (18–64) should do 150–300 minutes per week of moderate-intensity aerobic activity, OR 75–150 minutes of vigorous-intensity, or an equivalent combination.",
+      "scope": "adults 18–64",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "guideline",
+        "replication": "replicated",
+        "note": "WHO 2020 recommendation built on GRADE-methodology systematic reviews pooling dozens of cohort studies and RCTs on aerobic activity and cardiovascular/all-cause mortality."
+      },
+      "mechanism": "Aerobic training improves cardiac output, endothelial function, and mitochondrial density in skeletal muscle, while lowering blood pressure and insulin resistance — all mechanistically linked to reduced CVD and metabolic mortality.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "aerobic", "dosing"]
+    },
+    {
+      "id": 8,
+      "claim": "Adults should do muscle-strengthening activity at moderate or greater intensity involving all major muscle groups on 2 or more days per week.",
+      "scope": "adults 18–64",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "guideline",
+        "replication": "replicated",
+        "note": "WHO 2020 strong recommendation based on GRADE systematic review of muscle-strengthening activity and all-cause/cause-specific mortality."
+      },
+      "mechanism": "Resistance training triggers mTOR-pathway muscle protein synthesis, preserves type-II fibers, and increases bone mineral density — offsetting age-related sarcopenia and osteopenia, which are independent mortality risk factors.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "resistance", "dosing"]
+    },
+    {
+      "id": 9,
+      "claim": "Adults should limit total sedentary time; replacing sedentary time with physical activity of any intensity — even light — provides health benefits.",
+      "scope": "adults 18–64",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "guideline",
+        "replication": "replicated",
+        "note": "WHO 2020 recommendation based on observational studies isomorphic-replacement modeling sedentary minutes swapped for light activity. Evidence base is weaker than for aerobic/resistance guidance — see fact 11."
+      },
+      "mechanism": "Prolonged sitting suppresses lipoprotein lipase activity in postural muscles, impairing triglyceride clearance; breaking up sitting restores that clearance and reduces postprandial glycemic excursions.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["sedentary", "lifestyle"]
+    },
+    {
+      "id": 10,
+      "claim": "The activity–health relationship is curvilinear: benefits accrue across all levels but marginal gains diminish at higher doses.",
+      "scope": "adults",
+      "source_ids": ["002", "005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "WHO 2020 dose-response meta-analyses plus Coleman 2022 national cohort (416,420 US adults) both show the largest risk reductions moving from 0 to ~1 hour/week, with flattening gains beyond 3 hours/week."
+      },
+      "mechanism": "Early activity corrects the largest deficits in VO2max, insulin sensitivity, and blood pressure; once those are normalized, additional volume acts on smaller residual risk, producing the characteristic diminishing-returns curve.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "dose-response"]
+    },
+    {
+      "id": 11,
+      "claim": "There is insufficient evidence to set a specific quantitative threshold for sedentary time — the guidance is 'less is better' rather than a hard cap.",
+      "scope": "adults",
+      "source_ids": ["002"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "guideline",
+        "replication": "single",
+        "note": "WHO 2020 explicitly reports insufficient evidence to set a numerical sedentary-time threshold. This is a statement about the evidence base, not a finding in itself."
+      },
+      "mechanism": null,
+      "mechanism_source": null,
+      "tags": ["sedentary", "uncertainty"]
+    },
+    {
+      "id": 12,
+      "claim": "People with the healthiest bundle of lifestyle factors have 55% lower all-cause mortality (HR 0.45, 95% CI 0.41–0.48) vs. those with the least-healthy bundle.",
+      "scope": "general adult (142 cohort meta-analysis, 2.58M participants)",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2021 pooled 74 prospective cohort studies (n=2,584,766 adults) comparing the top and bottom of composite healthy-lifestyle scores. The tight 95% CI (0.41–0.48) reflects the large pooled sample and consistency across cohorts."
+      },
+      "mechanism": "The five bundled factors (fact 14) act on mostly independent causal pathways — smoking drives carcinogenesis and vascular damage, activity and diet act on metabolic risk, weight sits downstream of diet/activity — so their effects on mortality combine sub-additively but substantially.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["lifestyle", "mortality", "meta-analysis"]
+    },
+    {
+      "id": 13,
+      "claim": "People with the healthiest bundle of lifestyle factors have 58% lower cardiovascular mortality (HR 0.42, 95% CI 0.37–0.46) vs. the least-healthy bundle.",
+      "scope": "general adult",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2021 pooled 41 cohort studies (n=1,742,000) for cardiovascular mortality; effect size is slightly larger than for all-cause mortality, consistent with lifestyle acting most strongly on CVD."
+      },
+      "mechanism": "Every factor in the bundle directly modifies atherosclerotic CVD risk: smoking damages endothelium, diet and weight control lipids and blood pressure, activity improves endothelial function and insulin sensitivity.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["lifestyle", "cardiovascular", "mortality"]
+    },
+    {
+      "id": 14,
+      "claim": "The core modifiable lifestyle factors whose combination drives the mortality reduction are: not smoking, moderate/no alcohol, regular physical activity, healthy diet, and healthy weight.",
+      "scope": "general adult",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2021 included only studies that scored at least three of: smoking, alcohol, physical activity, diet, BMI. These five factors are the consensus set across the pooled cohorts."
+      },
+      "mechanism": "Each factor targets a distinct major mortality driver (smoking → cancer/CVD, alcohol → liver/CVD/cancer, inactivity → metabolic and CVD, poor diet → metabolic/CVD, obesity → metabolic/CVD/cancer), and the pathways are largely non-overlapping, which is why combining them compounds.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["lifestyle", "factors"]
+    },
+    {
+      "id": 15,
+      "claim": "The protective effect of a healthy lifestyle bundle is consistent across continents, racial groups, and socioeconomic backgrounds.",
+      "scope": "general adult global",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2021 subgroup analyses across 142 cohorts spanning multiple continents and socioeconomic strata showed no loss of protective effect — the pooled HR held within each subgroup."
+      },
+      "mechanism": "The causal pathways (endothelial, metabolic, carcinogenic) are biological universals, not culturally mediated, so the bundle's upstream effect should and does generalize across populations.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["lifestyle", "generalizability"],
+      "verbatim": "largely significant and consistent among individuals from different continents, racial groups and socioeconomic backgrounds"
+    },
+    {
+      "id": 16,
+      "claim": "Omega-3 fatty acids (EPA/DHA, from fish and seafood) support attention, executive function, and impulse control through direct effects on neurogenesis, neuronal migration, synaptogenesis, and reduced neuro-inflammation.",
+      "scope": "general adult, especially young adulthood and middle age",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Puri 2023 life-course review synthesizes interventional and observational evidence across multiple populations linking omega-3 intake to cognitive structure and function."
+      },
+      "mechanism": "DHA is a major structural lipid of neuronal membranes and supports neurogenesis and synaptogenesis; EPA reduces neuro-inflammation through resolution-phase lipid mediators.",
+      "mechanism_source": "source",
+      "tags": ["nutrition", "cognition", "omega-3"]
+    },
+    {
+      "id": 17,
+      "claim": "Mediterranean and MIND (Mediterranean-DASH hybrid) diets are associated with lower risk of cognitive decline and dementia.",
+      "scope": "general adult",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Puri 2023 review summarizes multiple independent cohort studies showing Mediterranean and MIND patterns protect cognitive function; DASH and Nordic patterns show similar effects."
+      },
+      "mechanism": "These patterns are rich in omega-3, polyphenols, and fiber (facts 16 and 20) and low in saturated fat and refined carbohydrates (fact 18), so they activate the full set of diet→brain mechanisms.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "cognition", "diet-patterns"]
+    },
+    {
+      "id": 18,
+      "claim": "High saturated fat and high-fat dairy intake are associated with worse cognitive trajectories; low-fat diets are protective against cognitive decline.",
+      "scope": "general adult",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Puri 2023 review cites multiple observational studies. Observational rather than interventional, so residual confounding is possible; tier is moderate rather than strong."
+      },
+      "mechanism": "Saturated fat raises LDL and promotes cerebrovascular damage, and high-fat intake is associated with worse vascular and endothelial function in the brain — both contribute to vascular cognitive impairment.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "cognition", "avoid"]
+    },
+    {
+      "id": 19,
+      "claim": "Cocoa flavonoids are associated with 41% lower risk of cognitive decline.",
+      "scope": "general adult",
+      "source_ids": ["004"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "single",
+        "note": "Puri 2023 cites this as a single notable finding. Observational and not yet replicated in independent cohorts at this effect size — the number is striking and should be taken as indicative rather than precise."
+      },
+      "mechanism": "Flavonoids (particularly epicatechin in cocoa) increase cerebral blood flow and support endothelial nitric-oxide signaling — both linked to better cognitive function.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "cognition", "polyphenols"]
+    },
+    {
+      "id": 20,
+      "claim": "Unrefined whole grains (vs. refined) are associated with better cognitive function.",
+      "scope": "general adult",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Puri 2023 cites consistent observational evidence across studies linking whole-grain intake to better cognitive trajectories."
+      },
+      "mechanism": "Whole grains have lower glycemic load and higher fiber, B-vitamins, and magnesium — all linked to steadier glucose supply to the brain and better endothelial function.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "cognition", "whole-grains"]
+    },
+    {
+      "id": 21,
+      "claim": "Practical dietary targets for brain + longevity: ≥400g fruits and vegetables daily, <10% of total energy from free sugars, <30% of total energy from fat with most from unsaturated sources.",
+      "scope": "general adult",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "guideline",
+        "replication": "replicated",
+        "note": "Puri 2023 practical recommendations align with standing WHO nutrition guidance and are supported by multiple systematic reviews on diet quality and chronic disease."
+      },
+      "mechanism": "Combines the mechanisms of facts 3, 4, 16, 17, and 20 — adequate polyphenols and fiber, controlled glycemic load, and adequate unsaturated fat for membrane and vascular health.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["nutrition", "practical", "targets"]
+    },
+    {
+      "id": 22,
+      "claim": "Just 1 hour per week of aerobic activity produces substantial mortality risk reduction (HR 0.85, 95% CI 0.83–0.86) — significantly below the WHO 150 min/week minimum.",
+      "scope": "adults",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Coleman 2022 analyzed 416,420 US adults and found clinically meaningful mortality reductions at doses well below the WHO minimum. Single (very large) cohort rather than meta-analysis, so trust is strong-single."
+      },
+      "mechanism": "Even 1 hour/week of aerobic activity is enough to begin correcting the largest deficits in VO2max, insulin sensitivity, and blood pressure — the leftmost part of the curvilinear dose-response curve (fact 10).",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "minimum-dose", "mortality"]
+    },
+    {
+      "id": 23,
+      "claim": "Aerobic activity benefits plateau around 3 hours per week; additional volume beyond that gives minimal extra mortality reduction.",
+      "scope": "adults",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Coleman 2022 (416,420 US adults) showed the dose-response curve flattening after ~3 hours/week of aerobic PA."
+      },
+      "mechanism": "Same diminishing-returns mechanism as fact 10: once the largest cardiometabolic deficits are corrected, further volume acts on smaller residual risk.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "dose-response"]
+    },
+    {
+      "id": 24,
+      "claim": "Muscle-strengthening exercise shows a marked inverse association with mortality at just 1 session per week, with minimal extra benefit beyond 1–2 sessions per week; benefits disappear at 7+ sessions/week (HR 0.99).",
+      "scope": "adults",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Coleman 2022 national cohort showed clear mortality benefit at 1–2 resistance sessions/week, with the benefit vanishing at very high frequencies. The 7x/week null is observational and possibly reflects overtraining or confounding in that subgroup."
+      },
+      "mechanism": "Once mTOR-pathway protein synthesis and bone-loading stimuli are being hit regularly, extra frequency stops adding — and very high frequencies may compete with recovery.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "resistance", "minimum-dose"]
+    },
+    {
+      "id": 25,
+      "claim": "For untrained adults, strength gains occur with as little as 1 session per week, 1 set per exercise at 60–85% of maximum load, across ~4 exercises per session.",
+      "scope": "untrained adults",
+      "source_ids": ["011"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Nuzzo 2024 Sports Medicine overview synthesizes multiple RCTs on minimal-dose resistance training; weekend-warrior (1 session/week) programs show strength gains from 6–74% across studies."
+      },
+      "mechanism": "Even a single session hits enough muscle protein synthesis via mTOR to produce adaptation in untrained muscle; the adaptation window from one session extends for 24–72 hours.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "resistance", "minimum-dose"]
+    },
+    {
+      "id": 26,
+      "claim": "Resistance training frequency matters less than total weekly volume — differences between training frequencies disappear when volume is equated.",
+      "scope": "general adult",
+      "source_ids": ["011"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Nuzzo 2024 explicit conclusion from the aggregated trials: 'differences in gains in muscle size and strength from different exercise frequencies disappear when exercise volume is equated.'"
+      },
+      "mechanism": "Total weekly training stimulus (sets × reps × load) drives adaptation; splitting the same total across more sessions doesn't add a stimulus the muscle hasn't already received.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "resistance", "volume"]
+    },
+    {
+      "id": 27,
+      "claim": "Time-efficient resistance training options for busy populations include: weekend warrior (one weekly session), single-set 30-minute sessions 2–3×/week, and exercise 'snacks' (2–10 minute daily bouts at home).",
+      "scope": "busy adults",
+      "source_ids": ["011"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "single",
+        "note": "Nuzzo 2024 explicit recommendations. Framed as practical options rather than head-to-head RCT comparisons, so they are moderate-trust until each modality is tested directly."
+      },
+      "mechanism": "Each option is a different distribution of the same total weekly stimulus (fact 26) across time, so all three should produce similar adaptation if total volume is matched.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["exercise", "time-efficient", "practical"]
+    },
+    {
+      "id": 28,
+      "claim": "Short sleep (<7 hours) is associated with 27% higher risk of cognitive decline (RR 1.27).",
+      "scope": "adults",
+      "source_ids": ["006"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2025 updated systematic review and meta-analysis of longitudinal studies linking sleep duration to cognitive decline across multiple cohorts."
+      },
+      "mechanism": "Short sleep disrupts glymphatic clearance of beta-amyloid and other metabolic byproducts from the brain and impairs memory consolidation during slow-wave and REM cycles — both linked to cognitive trajectory.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["sleep", "cognition", "dementia"]
+    },
+    {
+      "id": 29,
+      "claim": "Long sleep (>8 hours) is associated with 43% higher risk of all-cause dementia (RR 1.43) and 66% higher risk of Alzheimer's disease (RR 1.66).",
+      "scope": "adults",
+      "source_ids": ["006"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2025 meta-analysis. The long-sleep association is larger than the short-sleep association, though reverse causation (early dementia causing longer sleep) is a plausible partial explanation."
+      },
+      "mechanism": null,
+      "mechanism_source": null,
+      "tags": ["sleep", "cognition", "dementia"]
+    },
+    {
+      "id": 30,
+      "claim": "Sleep duration shows a U-shaped relationship with cognitive decline; the optimal window is 7–8 hours per night.",
+      "scope": "adults",
+      "source_ids": ["006"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2025 consistent U-shaped association across longitudinal cohorts, with the lowest cognitive decline risk in the 7–8 hour window."
+      },
+      "mechanism": "7–8 hours allows both adequate slow-wave sleep (for glymphatic clearance and memory consolidation) and REM sleep (for procedural learning and emotional processing) without entering the pathology-associated long-sleep tail.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["sleep", "cognition", "duration"]
+    },
+    {
+      "id": 31,
+      "claim": "Poor sleep quality and insomnia independently raise dementia/Alzheimer's risk (poor quality RR 1.24 for AD; insomnia RR 1.13 for dementia); sleep-related movement disorders and excessive daytime sleepiness raise vascular dementia risk much more (RR 2.53 and 1.85 respectively).",
+      "scope": "adults",
+      "source_ids": ["006"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zhang 2025 meta-analysis across longitudinal studies; effect sizes for sleep disorders on vascular dementia are notably larger than for insomnia on all-cause dementia."
+      },
+      "mechanism": "Fragmented sleep disrupts slow-wave-dependent glymphatic clearance; sleep-disordered breathing causes intermittent hypoxia that directly damages vascular beds supplying the brain.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["sleep", "quality", "dementia"]
+    },
+    {
+      "id": 32,
+      "claim": "Predominantly sitting at work is associated with 16% higher all-cause mortality (HR 1.16, 95% CI 1.11–1.20) and 34% higher cardiovascular mortality (HR 1.34, 95% CI 1.22–1.46).",
+      "scope": "working adults",
+      "source_ids": ["007"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Gao 2024 JAMA Network Open cohort of 481,688 adults followed for ~12.85 years. Very large sample and long follow-up — strong-single trust."
+      },
+      "mechanism": "Prolonged sitting suppresses lipoprotein lipase activity in postural muscles (reducing triglyceride clearance) and impairs postprandial glucose handling; sustained over years this drives atherosclerosis and metabolic disease.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["sedentary", "office-work", "mortality"]
+    },
+    {
+      "id": 33,
+      "claim": "15–30 minutes per day of additional leisure-time physical activity can offset the elevated mortality risk from predominantly sitting at work.",
+      "scope": "working adults",
+      "source_ids": ["007"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Gao 2024: desk workers with <15 min/day activity needed an extra 30 min/day to normalize mortality risk; those already at 15–29 min/day needed an extra 15 min/day."
+      },
+      "mechanism": "Leisure activity restores the same muscular LPL and glucose-handling mechanisms that prolonged sitting suppresses (see fact 32), so a small additional daily dose is enough to offset the sitting-induced impairment.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["sedentary", "office-work", "offset"]
+    },
+    {
+      "id": 34,
+      "claim": "Mindfulness meditation produces small-to-moderate improvements in sustained attention (g = 0.367 on accuracy measures).",
+      "scope": "adults, mixed healthy and clinical populations",
+      "source_ids": ["008"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zainal & Newman 2023 meta-analysis of 111 RCTs. Effects are consistent across trials for accuracy-based sustained attention; no effect on latency measures."
+      },
+      "mechanism": "Mindfulness training strengthens top-down attention regulation and reduces mind-wandering through repeated practice of noticing and returning attention, which improves sustained-accuracy performance.",
+      "mechanism_source": "source",
+      "tags": ["mindfulness", "attention", "focus"]
+    },
+    {
+      "id": 35,
+      "claim": "Mindfulness produces small-to-large improvements in global cognition (g = 0.583 vs. waitlist; g = 0.208 vs. active controls), with gains in working memory and inhibition accuracy as well.",
+      "scope": "adults",
+      "source_ids": ["008"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zainal & Newman 2023 meta-analysis of 111 RCTs. Effect vs. active controls is smaller than vs. waitlist, suggesting part of the gain is non-specific but a specific mindfulness effect remains."
+      },
+      "mechanism": "Mindfulness practice induces neuroplastic changes including increased prefrontal cortical thickness and reduced amygdala reactivity, improving top-down regulation of emotion and cognition.",
+      "mechanism_source": "source",
+      "tags": ["mindfulness", "cognition", "working-memory"]
+    },
+    {
+      "id": 36,
+      "claim": "Brief mindfulness interventions produce comparable cognitive benefits to longer programs — session count and total program duration did not significantly moderate effect size.",
+      "scope": "adults",
+      "source_ids": ["008"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Zainal & Newman 2023 moderator analysis found no dose-response across 111 RCTs. Moderate rather than strong because null moderator findings can reflect low statistical power to detect a dose effect."
+      },
+      "mechanism": "A large fraction of the cognitive benefit may come from early practice effects on attention regulation, which are achievable in relatively few sessions.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["mindfulness", "dose", "practical"]
+    },
+    {
+      "id": 37,
+      "claim": "Interventions targeting multiple health behaviors simultaneously (most commonly diet + physical activity, with or without smoking cessation) are effective in managing chronic conditions.",
+      "scope": "adults with chronic conditions",
+      "source_ids": ["009"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Silva 2024 Annals of Behavioral Medicine systematic review + meta-analysis; the diet + activity + smoking combination was studied in k=20 trials, diet + activity alone in k=16."
+      },
+      "mechanism": "Multi-behavior interventions exploit shared behavior-change infrastructure (self-monitoring, goal-setting, feedback) across all targeted behaviors, and bundled changes can reinforce each other (e.g. exercise makes healthier eating easier).",
+      "mechanism_source": "added-by-agent",
+      "tags": ["habit-change", "multi-behavior", "prioritization"]
+    },
+    {
+      "id": 38,
+      "claim": "In multi-behavior interventions, diet changes (fat intake, d = 0.436) show larger effect sizes than physical activity changes (d = 0.177), with fruit/vegetable intake in between (d = 0.232).",
+      "scope": "adults in multi-behavior interventions",
+      "source_ids": ["009"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Silva 2024 end-of-intervention effect sizes. The larger diet effect may reflect that diet is more directly manipulable in a structured program than habitual PA."
+      },
+      "mechanism": "Diet changes can be implemented with a single planning decision (what to buy, what to cook) whereas PA changes require sustained scheduling and energy expenditure — lower friction explains part of the larger short-term effect on diet.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["habit-change", "diet", "priority"]
+    },
+    {
+      "id": 39,
+      "claim": "Smoking cessation does NOT meaningfully respond to multi-behavior interventions in the meta-analysis (d = -0.019, no effect).",
+      "scope": "adults in multi-behavior interventions",
+      "source_ids": ["009"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Silva 2024 found null effect on smoking in multi-behavior intervention trials. This likely reflects that smoking is nicotine-addiction-driven and requires targeted cessation support rather than general health coaching."
+      },
+      "mechanism": "Smoking is maintained by nicotine dependence and operant reinforcement, neither of which is addressed by generic goal-setting or self-monitoring aimed at diet and activity.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["habit-change", "smoking", "targeted"]
+    },
+    {
+      "id": 40,
+      "claim": "Consuming an energy drink reduces same-night sleep duration by approximately 24 minutes on average, with significant reductions in sleep quality and next-day tiredness.",
+      "scope": "college students",
+      "source_ids": ["010"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Patrick 2016 daily-diary study of 667 college students across 25,616 person-days, using within-person models that control for each student's baseline sleep patterns."
+      },
+      "mechanism": "Caffeine blocks adenosine receptors, delaying sleep onset and reducing slow-wave-sleep density; this effect is dose- and timing-dependent and persists for ~6 hours after ingestion.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["energy-drinks", "sleep", "caffeine"]
+    },
+    {
+      "id": 41,
+      "claim": "Even occasional (not habitual) energy drink consumption measurably hurts sleep — the effect is not limited to heavy users.",
+      "scope": "college students",
+      "source_ids": ["010"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Patrick 2016 within-person analysis showed the sleep-reduction effect persisted after controlling for each student's average consumption level, so it's not confounded by being a 'heavy user' type."
+      },
+      "mechanism": "Each individual dose of caffeine produces the adenosine-blockade effect regardless of tolerance history, though habitual users may experience somewhat smaller subjective effects.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["energy-drinks", "sleep", "occasional-use"]
+    },
+    {
+      "id": 42,
+      "claim": "Energy drink use among students tends to form a 'stimulation–sedation loop': caffeine creates sleep debt, students then consume more energy drinks to combat the resulting tiredness, perpetuating the cycle.",
+      "scope": "college students",
+      "source_ids": ["010"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "prospective-cohort",
+        "replication": "single",
+        "note": "Patrick 2016 authors propose this loop based on their within-person pattern of energy drink use predicting next-day tiredness and next-day energy drink use. Mechanism is proposed rather than causally tested."
+      },
+      "mechanism": "Caffeine produces alertness short-term but disrupts subsequent sleep, producing tiredness the next day that incentivizes another dose — a self-reinforcing behavioral loop rather than a purely pharmacological one.",
+      "mechanism_source": "source",
+      "tags": ["energy-drinks", "sleep", "behavior-loop"]
+    }
+  ]
+}

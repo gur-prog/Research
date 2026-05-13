@@ -1,0 +1,308 @@
+{
+  "facts": [
+    {
+      "id": 1,
+      "claim": "A small subset of humans carrying rare mutations in DEC2, ADRB1, NPSR1, or GRM1 naturally sleep 4–6 hours per night without apparent cognitive or metabolic detriment.",
+      "scope": "rare genetic variant carriers",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "systematic-review",
+        "replication": "replicated",
+        "note": "Bakhsh 2021 systematic review covering family studies and mouse models for each of the four gene variants; effects are consistent across carrier families and corroborated in knock-in mice."
+      },
+      "mechanism": "Most variants (DEC2, ADRB1, NPSR1) enhance wake-promoting signaling rather than reducing sleep need — the phenotype is 'increased wake period' not 'less sleep required,' mediated by circadian clock, β1-adrenergic, and neuropeptide-S receptor pathways.",
+      "mechanism_source": "source",
+      "tags": ["genetics", "individual-variation"]
+    },
+    {
+      "id": 2,
+      "claim": "DEC2 (P385R) carriers average 6.25 hours nightly vs. 8.06 hours in non-carrier family members — a ~1.8 hour stable within-family difference.",
+      "scope": "DEC2 carrier families",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Family studies of DEC2 P385R carriers reviewed in Bakhsh 2021; the effect is stable lifelong and replicated in knock-in mouse models showing reduced recovery sleep after deprivation."
+      },
+      "mechanism": "DEC2 is a transcription factor that represses MyoD and CLOCK/BMAL1 targets, altering circadian regulation of sleep homeostasis; carriers show blunted sleep pressure accumulation.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["genetics", "DEC2"]
+    },
+    {
+      "id": 3,
+      "claim": "Natural short sleepers show 'minimal behavioral and metabolic impairment in response to sleep loss' and comparable BMI to matched non-carriers.",
+      "scope": "natural short sleeper carriers",
+      "source_ids": ["001"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "single",
+        "note": "Twin case study cited in Bakhsh 2021: carrier twin 299.3 min sleep vs. non-carrier twin 364.7 min, with nearly identical BMI and minimal cognitive deficit after deprivation. Small sample — twins within families — so moderate rather than strong."
+      },
+      "mechanism": "Enhanced wake-promoting signaling appears to decouple sleep duration from recovery needs in carriers, possibly via more-efficient slow-wave sleep or altered adenosine clearance.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["genetics", "short-sleepers", "resilience"]
+    },
+    {
+      "id": 4,
+      "claim": "Natural short sleeping is rare — these mutations are not a license for the general population to sleep less. The default healthy target remains 7–8 hours.",
+      "scope": "general adult",
+      "source_ids": ["001"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "systematic-review",
+        "replication": "replicated",
+        "note": "Bakhsh 2021 is explicit that NSS variants are rare and that normal population-level sleep need remains ~7–8 hours. Self-identified short sleepers without the variants generally show the cognitive deficits of sleep restriction."
+      },
+      "mechanism": "Absence of wake-promoting variants means normal adenosine/sleep-pressure accumulation, which requires standard sleep duration to clear.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["genetics", "population-default"]
+    },
+    {
+      "id": 5,
+      "claim": "Sleeping >8 hours is associated with HR 1.29 (95% CrI 0.94–1.77) for dementia vs. the 7–8 hour reference, with posterior probability 94.5% that HR > 1.",
+      "scope": "older adults",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "2025 Bayesian meta-analysis of prospective cohorts; effect is in the same direction but smaller than the RR 1.43 reported in the parent-topic Zhang 2025 review, reflecting different pooling methods."
+      },
+      "mechanism": null,
+      "mechanism_source": null,
+      "tags": ["long-sleep", "dementia", "effect-size"]
+    },
+    {
+      "id": 6,
+      "claim": "The absolute impact of long sleep on dementia-free time is small — about 0.13 fewer dementia-free years by age 85 for people in the >8h group vs. the 7–8h reference.",
+      "scope": "older adults",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "single",
+        "note": "Modeled from the same 2025 meta-analysis. The relative hazard is ~29% but translates to ~6 weeks of life over a 20-year horizon — a context correction on how scary the relative number sounds."
+      },
+      "mechanism": "A small absolute effect on a distal outcome is consistent with long sleep being a weak-effect marker or a partial confound rather than a strong causal driver.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["long-sleep", "absolute-risk"]
+    },
+    {
+      "id": 7,
+      "claim": "Long sleep does NOT significantly increase cognitive decline risk on its own (RR 1.13, 95% CI 0.92–1.40) — only full-blown dementia shows the effect, further suggesting a prodromal or reverse-causation pathway.",
+      "scope": "older adults",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "2025 meta-analysis: cognitive decline (the earlier phenotype) shows a null effect while all-cause dementia (the later phenotype) shows an effect — pattern consistent with long sleep being a late-stage marker."
+      },
+      "mechanism": "If long sleep were causally harmful through neurotoxic oversleeping, the effect should appear earlier on the cognitive-decline trajectory, not later. The temporal pattern is more consistent with long sleep emerging as pathology nears.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["long-sleep", "reverse-causation"]
+    },
+    {
+      "id": 8,
+      "claim": "The 2025 meta-analysis authors explicitly conclude that it is unclear whether long sleep is an independent risk factor or reflects the same underlying pathology as dementia — they propose reframing the question as 'disordered sleep' rather than duration.",
+      "scope": "older adults",
+      "source_ids": ["002"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "single",
+        "note": "Direct author statement: 'It remains unclear whether these are independent risk factors or merely reflect the same underlying pathological process.' They argue excessive time in bed likely reflects fragmented sleep quality, not longer actual sleep."
+      },
+      "mechanism": "Time-in-bed is measured but actual sleep is not in most cohorts, so 'long sleepers' may include many people with poor sleep efficiency compensating with extra hours — a quality problem masquerading as a duration problem.",
+      "mechanism_source": "source",
+      "tags": ["long-sleep", "causal-uncertainty"]
+    },
+    {
+      "id": 9,
+      "claim": "All three major consumer wearables (Oura Ring, Fitbit Sense 2, Apple Watch) achieve ≥95% sensitivity for distinguishing sleep from wake vs. polysomnography.",
+      "scope": "healthy adults, single-night lab condition",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "single",
+        "note": "Grau-Bové 2024 single-night inpatient study with 35 healthy adults on simultaneous PSG and all three devices. High sensitivity is consistent across devices for the binary sleep/wake question."
+      },
+      "mechanism": "Accelerometer-based actigraphy captures motion; wake episodes produce characteristic movement patterns reliably detected by all modern sensors.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["wearables", "sleep-wake", "validation"]
+    },
+    {
+      "id": 10,
+      "claim": "Sleep-stage accuracy varies substantially by device: Oura Ring 76.0–79.5% sensitivity across stages, Fitbit 61.7–78.0%, Apple Watch 50.5–86.1% (most variable).",
+      "scope": "healthy adults",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "single",
+        "note": "Grau-Bové 2024 single-night study. Moderate rather than strong because it's a single night in a lab — real-world longitudinal accuracy may differ, and device failure rates (Fitbit 2/35, Apple Watch 6/35) raise reliability concerns."
+      },
+      "mechanism": "Sleep staging requires inferring EEG-like features from peripheral signals (heart rate variability, motion, skin temperature) — an underdetermined problem that different algorithms solve with different tradeoffs.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["wearables", "sleep-stages"]
+    },
+    {
+      "id": 11,
+      "claim": "Apple Watch systematically underestimates deep sleep by 43 minutes and overestimates light sleep by 45 minutes vs. PSG; Fitbit shows smaller but directionally similar bias; Oura matches PSG total duration within ~9 minutes.",
+      "scope": "healthy adults",
+      "source_ids": ["003"],
+      "confidence": "high",
+      "trust": "moderate",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "single",
+        "note": "Grau-Bové 2024. The Apple Watch deep-sleep underestimation is large enough to be user-misleading — someone 'not getting enough deep sleep' on their Apple Watch may be getting plenty."
+      },
+      "mechanism": "Deep sleep is usually detected by reduced heart rate variability and movement — Apple Watch's thresholds appear too conservative, reclassifying deep sleep as light.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["wearables", "bias"]
+    },
+    {
+      "id": 12,
+      "claim": "PSQI is the standard subjective sleep quality self-assessment and is built from seven components: perceived quality, latency, duration, efficiency, disturbances, medication use, daytime dysfunction.",
+      "scope": "general adult",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Fabbri 2021 review of PSQI use across hundreds of studies; the seven-component structure is the original Buysse 1989 formulation that has become the de facto self-assessment standard."
+      },
+      "mechanism": "Sleep quality is multi-dimensional — you can have adequate duration with poor efficiency, or good efficiency with too-short duration — so a single metric misses most of the signal. The seven-component PSQI is an attempt to cover the full construct.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["PSQI", "self-assessment"]
+    },
+    {
+      "id": 13,
+      "claim": "PSQI has good internal consistency (Cronbach's α = 0.76) and test-retest reliability (mean r = 0.64 over 2–16 weeks), making it a reliable self-assessment instrument.",
+      "scope": "general adult",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Fabbri 2021 review pooling reliability statistics across many PSQI validation studies."
+      },
+      "mechanism": "Subjective sleep quality is a relatively stable individual trait over weeks; the PSQI items each tap related but distinguishable facets, so the composite is both internally coherent and temporally reliable.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["PSQI", "reliability"]
+    },
+    {
+      "id": 14,
+      "claim": "PSQI correlates weakly with polysomnography (r between −0.33 and 0.52), meaning subjective and objective sleep quality capture overlapping but distinct constructs.",
+      "scope": "general adult",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Fabbri 2021 summarizes subjective-objective correlation studies; the weak correlation is consistent across studies and is the central caveat for PSQI use."
+      },
+      "mechanism": "How you feel about your sleep is influenced by expectations, mood, and daytime function in ways that EEG does not capture — and EEG captures microstructure (spindles, slow-wave density) that you don't consciously perceive.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["PSQI", "subjective-objective-gap"]
+    },
+    {
+      "id": 15,
+      "claim": "PSQI global score >5 indicates poor sleep quality in the general population; in university students the better cutoff is >6–7.",
+      "scope": "general adult; university students",
+      "source_ids": ["005"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "observational-other",
+        "replication": "replicated",
+        "note": "Fabbri 2021 cites the original >5 threshold plus population-specific validation studies; university students show higher baseline PSQI scores and need a higher cutoff for the same clinical meaning."
+      },
+      "mechanism": "Student populations have contextually higher baseline scores due to schedule irregularity and stress, so a fixed threshold would over-flag them. The population-specific cutoff reflects what counts as dysfunction within that context.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["PSQI", "cutoffs", "students"]
+    },
+    {
+      "id": 16,
+      "claim": "Cognitive and behavioral sleep interventions produce a medium effect on sleep quality in adults without sleep disorders: Hedge's g = −0.54 (95% CI −0.90 to −0.19, p < 0.01).",
+      "scope": "healthy adults without sleep disorders",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Murawski 2018 meta-analysis of 11 RCTs specifically in non-clinical populations. Medium effect size is notable because most sleep-intervention research focuses on clinical insomnia populations."
+      },
+      "mechanism": "Behavioral sleep interventions reduce conditioned arousal around bed (stimulus control), reset circadian timing (light + wake-time consistency), and decrease pre-sleep cognitive arousal (relaxation) — three of the main modifiable drivers of poor sleep in healthy people.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["interventions", "CBT", "effect-size"]
+    },
+    {
+      "id": 17,
+      "claim": "The four intervention components appearing most in effective sleep trials are: stress management/relaxation, stimulus control, sleep hygiene education, and exercise.",
+      "scope": "healthy adults",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Murawski 2018 component analysis across effective trials. These are the modular pieces of CBT-I adapted for non-clinical populations."
+      },
+      "mechanism": "Each targets a distinct lever: relaxation reduces hyperarousal, stimulus control re-conditions the bed-sleep association, hygiene addresses environmental/behavioral friction, exercise increases sleep pressure and improves sleep architecture.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["interventions", "components"]
+    },
+    {
+      "id": 18,
+      "claim": "Baseline sleep health is the only significant moderator of intervention effect — interventions help more when baseline sleep is worse.",
+      "scope": "healthy adults",
+      "source_ids": ["004"],
+      "confidence": "high",
+      "trust": "strong",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "single",
+        "note": "Murawski 2018 moderator analysis — the only variable that reached significance."
+      },
+      "mechanism": "Regression to the mean plus larger room for improvement when starting lower: people already sleeping well can't gain much more by definition, and most sleep interventions work by removing friction rather than boosting a ceiling.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["interventions", "moderator"]
+    },
+    {
+      "id": 19,
+      "claim": "Sleep hygiene education alone (without the other CBT-I components) is insufficient — in standalone comparisons it is inferior to full or partial CBT-I, relaxation, and exercise.",
+      "scope": "adults with insomnia",
+      "source_ids": ["004"],
+      "confidence": "medium",
+      "trust": "moderate",
+      "evidence": {
+        "type": "meta-analysis",
+        "replication": "replicated",
+        "note": "Evidence cited in the broader 2024 sleep-hygiene meta-analysis mentioned in search results and echoed in Murawski 2018 component analysis — hygiene is necessary but not sufficient."
+      },
+      "mechanism": "Sleep hygiene addresses environmental friction but not the cognitive-arousal and conditioned-arousal drivers of poor sleep, which are the larger moving parts for most people with sleep problems.",
+      "mechanism_source": "added-by-agent",
+      "tags": ["interventions", "hygiene", "limits"]
+    }
+  ]
+}

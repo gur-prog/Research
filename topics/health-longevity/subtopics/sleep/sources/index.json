@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "001",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8547374/",
+      "title": "A Systematic Review of Natural Short Sleepers' Genes",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [1],
+      "tags": ["sleep", "genetics", "individual-variation", "short-sleepers"]
+    },
+    {
+      "id": "002",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12199367/",
+      "title": "Effect of Excessive Daytime Sleepiness and Long Sleep Duration on All Cause Dementia",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [2],
+      "tags": ["sleep", "long-sleep", "dementia", "reverse-causation"]
+    },
+    {
+      "id": "003",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11511193/",
+      "title": "Accuracy of Three Commercial Wearable Devices for Sleep Tracking in Healthy Adults",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [3],
+      "tags": ["sleep", "wearables", "validation", "self-assessment"]
+    },
+    {
+      "id": "004",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1087079217301661",
+      "title": "Cognitive and behavioral interventions to improve sleep health in adults without sleep disorders",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [4],
+      "tags": ["sleep", "interventions", "CBT", "behavioral", "meta-analysis"]
+    },
+    {
+      "id": "005",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7908437/",
+      "title": "Measuring Subjective Sleep Quality: A Review",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [3],
+      "tags": ["sleep", "PSQI", "self-assessment", "subjective"]
+    }
+  ]
+}

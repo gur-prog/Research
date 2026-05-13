@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "id": "001",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12904179/",
+      "title": "Healthy dietary patterns, longevity genes, and life expectancy: A prospective cohort study",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-12",
+      "covers": [1],
+      "tags": ["nutrition", "longevity", "diet-patterns", "life-expectancy"]
+    },
+    {
+      "id": "002",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7719906/",
+      "title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour",
+      "source_type": "web-article",
+      "credibility_tag": "gov-edu",
+      "fetched_at": "2026-04-12",
+      "covers": [2, 4],
+      "tags": ["physical-activity", "exercise", "guidelines", "WHO"]
+    },
+    {
+      "id": "003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32892156/",
+      "title": "Combined lifestyle factors, all-cause mortality and cardiovascular disease: a systematic review and meta-analysis of prospective cohort studies",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-12",
+      "covers": [6, 7],
+      "tags": ["lifestyle", "mortality", "meta-analysis", "cardiovascular"]
+    },
+    {
+      "id": "004",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10083484/",
+      "title": "Nutrition and cognitive health: A life course approach",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [1],
+      "tags": ["nutrition", "cognition", "brain-health", "diet-patterns"]
+    },
+    {
+      "id": "005",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064988/",
+      "title": "Dose-response association of aerobic and muscle-strengthening physical activity with mortality",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [2],
+      "tags": ["exercise", "minimum-dose", "mortality", "time-efficient"]
+    },
+    {
+      "id": "006",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518473/",
+      "title": "Sleep disorders and the risk of cognitive decline or dementia: an updated systematic review and meta-analysis",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [3],
+      "tags": ["sleep", "cognition", "dementia", "meta-analysis"]
+    },
+    {
+      "id": "007",
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2814094",
+      "title": "Occupational Sitting Time, Leisure Physical Activity, and All-Cause and Cardiovascular Disease Mortality",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [4],
+      "tags": ["sedentary", "office-work", "mortality", "desk-work"]
+    },
+    {
+      "id": "008",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10902202/",
+      "title": "Mindfulness Enhances Cognitive Functioning: A Meta-Analysis of 111 Randomized Controlled Trials",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [5],
+      "tags": ["mindfulness", "stress", "cognition", "meta-analysis"]
+    },
+    {
+      "id": "009",
+      "url": "https://academic.oup.com/abm/article/58/6/432/7667568",
+      "title": "Effectiveness of Interventions for Changing More Than One Behavior at a Time",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [6],
+      "tags": ["habit-change", "behavior-change", "prioritization", "meta-analysis"]
+    },
+    {
+      "id": "010",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5435568/",
+      "title": "Energy Drinks and Binge Drinking Predict College Students' Sleep Quantity, Quality, and Tiredness",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [7],
+      "tags": ["energy-drinks", "sleep", "students", "avoid"]
+    },
+    {
+      "id": "011",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11127831/",
+      "title": "Resistance Exercise Minimal Dose Strategies for Increasing Muscle Strength",
+      "source_type": "web-article",
+      "credibility_tag": "peer-reviewed",
+      "fetched_at": "2026-04-13",
+      "covers": [2],
+      "tags": ["resistance-training", "minimum-dose", "strength", "time-efficient"]
+    }
+  ]
+}

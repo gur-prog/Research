@@ -1,0 +1,9 @@
+topics/*/sources/web/*.html
+topics/*/sources/web/*.raw
+topics/*/products/pdf/*.pdf
+
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

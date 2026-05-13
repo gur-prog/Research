@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Glob",
+      "Grep",
+      "Write(topics/**)",
+      "Edit(topics/**)",
+      "Write(templates/**)",
+      "Edit(templates/**)",
+      "Bash(git status)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git push)",
+      "Bash(git pull)",
+      "Bash(pandoc:*)"
+    ]
+  }
+}
